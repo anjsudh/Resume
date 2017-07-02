@@ -1,1 +1,259 @@
-# Resume
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}           % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\definecolor{myblue}{RGB}{19,153,198}
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+
+% personal data
+\name{\textcolor{myblue}{Anjana}}{\textcolor{myblue}{S}}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{39, Block - 2, Sindur Green Park}{Jayachandran Nagar, Medavakkam, Chennai, TN, IN}{600100}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91 8056230400}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{anjsudh24@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.anjanasudhir.co.nf}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\small{To obtain a software developer position where my experience and technical skills will help in development of projects that satisfy customer requirements in different domains}
+\section{\textcolor{myblue}{Previous Employment}}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{May 2014--Present}{MTS, Full Stack Application Developer, Mentor, Module Owner - Enrollment, Mobile Device Management}{Zoho Corporation}{Chennai}{}{\vspace{3pt}Mobile Device Management solutions are used in enterprises to reduce the load of system administrators in managing mobile devices. My role was to simplify the process involved in bring devices under management, as customers, need to manage at least one device, to evaluate the product. The more difficult the process, the lesser the number of leads who will ultimately convert to customers.
+\newline 
+\textit{Role:}
+\begin{itemize}
+\item{Lead a team of developers towards successful project accomplishments} 
+\item{Work closely with Developers, Technical Architect, Support, UI Designers and Content Developers to gather requirements, design, develop, test and release applications, that truly satisfy customer goals}
+\item{Identification of key features that must be added to roadmap} 
+\item{Data analysis from Support Issue Manager to plan the next release tasks} 
+\item{Support customer over remote sessions/ mails for issue fixes, and immediate features}
+\item{Technical review of individual member's work} 
+\item{Mentor and train new joiners} 
+\item{Recruitment of members for the team} 
+\end{itemize}
+\textit{Major Features/ Enhancements Developed:}
+\begin{itemize}
+\item{Admin Enrollment of mobile devices} 
+\item{Evaluator Tracking} 
+\item{Precondition Elimination in Onpremise solutions (NAT, Proxy, SMTP)} 
+\end{itemize}
+\textit{Learnings:}
+\begin{itemize}
+\item{Customer always comes with solutions. Gathering the proper requirement is key.}
+\item{Need to provide a solution that will address the major section of the customer audiance.}
+\item{Developing a generic solution will help build similar features with minimal development effort.}
+\end{itemize}
+}}
+
+\text{\cventry{June 2017--Present}{Module Owner - API, MDM as a Platform }{}{}{}{\vspace{3pt}REST APIs will provide an oppurtunity for multiple solutions to be integrated with MDM. Moreover, this will allow Zoho One to provide multiple suites of Zoho products that will leverage the MDM solution for complete enterprise management.
+\newline 
+\textit{Learnings:}
+\begin{itemize}
+\item{Design of REST APIs}
+\end{itemize}
+}}
+
+\vspace{6pt}
+
+\item{\cventry{March 2013 - August 2013}{Intern}{Cognizant Technology Solutions CoE.}{Chennai}{}{\vspace{3pt}I had developed a ”Video Testing Application” for mobiles using Java platform. The application uses a Full-Reference based method to compare various quality metrics like Blockiness, Blurriness, Jerkiness and Audio Sync issues between a transmitted video and a standard video.}}
+
+\vspace{6pt}
+
+\item{\cventry{June 2012}{Implant Trainee}{HCL Career Development Center}{Chennai}{}{}}
+
+\end{itemize}
+
+\section{\textcolor{myblue}{Education}}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2010--2014}{B.E. Computer Science and Engineering}{SSN College of Engineering, Chennai, TN}{Anna University}{\textit{First Class - CGPA 8.1}}{}}
+
+\item{\cventry{2008--2010}{Higher Secondary Course}{Sri Sankara Vidyashramam}{TN Stateboard}{\textit{98\%}}{}}  % arguments 3 to 6 can be left empty
+
+\item{\cventry{2006--2008}{Secondary School Examination}{St. John’s English School \& Junior College, Chennai, TN}{CBSE}{\textit{93\%}}{}}
+
+\item{\cventry{2011}{C++ Certification}{NIIT, Chennai, TN}{NIIT}{}{}}
+
+\item{\cventry{2012}{Java Certification}{NIIT, Chennai, TN}{Oracle WorkForce Development Programme}{}{}}
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Academic Projects and Papers Presented}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\textbf{'WS-Security based solution for Securing SOAP message communication in a dynamic composition environment}
+
+\vspace{3pt}
+
+\small{TLS and Perimetric Solutions seemed insufficient in a Dynamic Composition environment for ensuring SOAP message security, as intermediaries could be compromised. Application Layer security was therefore needed. WS-Security standard provided countermeasures for addressing attacks through use of Security tokens. However, it focused only on ways to detect the attack, and not overcome it. Through this project a solution based on the WS-Security standard was proposed to addess security issues during Dynamic Composition.}}
+\vspace{6pt}
+\item{\textbf{The Great Mind Challenge, IBM:} \textit{'Universal Student Identification System using RFID'}
+
+\vspace{3pt}
+
+\small{It was my first major Web Application. The project scope was limited to attendance, unit test evaluation and internal calculation for each individual in a classroom. Ability to generate individual and summary reports and option to export the same in CSV and PDF formats( using third party apis) were provided. It was my first initiative towards the use of MVC model and object oriented design.}}
+\vspace{6pt}
+\item{\textbf{'’An Automated Framework to Detect Phishing at Runtime’} \textit{IDLN Number: IDLN-04052014-1660'}
+
+\vspace{3pt}
+
+\small{A simple Javascript mechanism that will dynamically fetch links in a message at runtime and validate if it was a phishing link. Paper won the Best Presentation award at ICEECE’14 conference.}}
+
+\vspace{6pt}
+
+\end{itemize}
+
+\section{\textcolor{myblue}{Technical and Personal skills}}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+
+\item \textbf{Server Side Technologies:} C, C++, Java, Struts 1.3, C#/.Net, Node.js, Express.js, JAX-RS, JAX-WS, Hibernate}
+\vspace{6pt}
+\item \textbf{Web Technologies:} HTML/CSS, JavaScript, AJAX, JSP, AngularJS, Bootstrap}
+\vspace{6pt}
+\item \textbf{Messaging Structures:} XML, SOAP, JSON, Plist}
+\vspace{6pt}
+\item \textbf{Databases:} Oracle 10g, Postgres, MySQL, MSSQL, DB2, MongoDB, Redis}
+\vspace{6pt}
+\item \textbf{Webservers:} Glassfish, Apache, Websphere}
+\vspace{6pt}
+\item \textbf{Testing Tools:} Telerik Fiddler, Apache JMeter, Selenium, Sikuli}
+\vspace{6pt}
+\item \textbf{Versioning Systems:} Git, Hg}
+\vspace{6pt}
+\item \textbf{IDE:} Netbeans 8, Eclipse Juno}
+\vspace{6pt}
+\item \textbf{Operating Systems:} Windows, Mac OS X El Capitan, Ubuntu, Fedora}
+\vspace{6pt}
+\item \textbf{Other Technologies:} OpenCSV, Jasper Reports, IText Reports, dd-plist, javapns 2, LDAP, Azure integration (Graph API) etc.}
+
+\end{itemize}
+
+\section{\textcolor{myblue}{Leadership activity}}
+
+\vspace{6pt}
+
+\begin{itemize}
+\item \textbf{Module Owner - MDM as a Platform (REST API)}, MDM, Zoho. \hfill 2017 - Present
+\vspace{6pt}
+\item \textbf{Mentor - Product Training}, MDM, Zoho. \hfill  2016 - Present
+\vspace{6pt}
+\item \textbf{Member Talent Acquisition}, MDM, Zoho. \hfill 2016 - Present
+\vspace{6pt}
+\item \textbf{Module Owner - Enrollment}, MDM, Zoho. \hfill 2014-2017
+\vspace{6pt}
+\item \textbf{Web Zeal Event Coordinator}, Paradigm 2k13, CS Symposium, SSNCE.
+\vspace{6pt}
+\item \textbf{Photography Committee In-charge}, Computer Science Department Newsletter, SSNCE.
+\vspace{6pt}
+\item \textbf{Student Coordinator}, Drona, an initiative by ICell for Student Interaction, SSNCE.
+\vspace{6pt}
+\item \textbf{Student Council Member}, Sri Sankara Vidyashramam.}
+\end{itemize}
+
+\section{\textcolor{myblue}{Awards}}
+
+\vspace{6pt}
+ 
+\begin{itemize}
+
+\item 12th rank in State and 163rd rank in National Level, NITAT 2012.
+\vspace{6pt}
+\item  Proficiency In Computer Science, Sri Sankara Vidyashramam, 2009
+\vspace{6pt}
+\item  Proficiency Award, Annual Promotion Exam, St. John’s English School and Junior College, 2007
+\vspace{6pt}
+\item  Distinction in Mathematics and Credit for Computer Skills, International Assessments for Indian Schools 2007, The University of New South Wales.
+\vspace{6pt}
+\item Distinction in Mathematics and Computer Skills, International Assessments for Indian Schools 2006, The University of New South Wales.
+\vspace{6pt}
+\item 198th rank in national level, 5th National Level Cyber Olympiad, SOF, 2006
+\end{itemize}
+
+\section{\textcolor{myblue}{Declaration}}
+
+\vspace{6pt}
+
+I hereby declare that all information mentioned herewith are true to my knowledge and belief.
+\flushright Anjana S
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
